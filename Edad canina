@@ -1,0 +1,16 @@
+<?php
+
+class animal{
+    private $edad= 0;
+    public function __construct ($edad){
+    $this->edad= $edad;
+    }
+    public function edad_canina(){
+    return "Su mascota tiene ".($this->edad * 7)." años de edad canina.";
+    }
+}
+$firulais = new animal(3);
+echo $firulais->edad_canina();
+
+
+?>
